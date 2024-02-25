@@ -1,0 +1,11 @@
+port: 8080
+database:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: zhr990410
+  hostname: simon-cost
+  dbName: cost-manager
+
+log:
+  file: ./data
