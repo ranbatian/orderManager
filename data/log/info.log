@@ -32,3 +32,98 @@
 2024-02-25T21:32:32.613+0800	INFO	db/db.go:25	create db success
 2024-02-25T21:32:32.658+0800	INFO	db/db.go:35	create table successful.
 2024-02-25T21:33:14.333+0800	INFO	zap@v0.2.0/zap.go:91	/v1/user/	{"status": 200, "method": "GET", "path": "/v1/user/", "query": "", "ip": "::1", "user-agent": "Apifox/1.0.0 (https://apifox.com)", "latency": "11.036125916s", "time": "2024-02-25T13:33:14Z"}
+2024-02-26T20:54:22.121+0800	INFO	db/db.go:25	create db success
+2024-02-26T20:54:22.362+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T21:02:22.004+0800	INFO	zap@v0.2.0/zap.go:91	/login	{"status": 200, "method": "POST", "path": "/login", "query": "", "ip": "::1", "user-agent": "Apifox/1.0.0 (https://apifox.com)", "latency": "29.780858ms", "time": "2024-02-26T13:02:22Z"}
+2024-02-26T21:03:18.143+0800	INFO	zap@v0.2.0/zap.go:91	/v1/order/type	{"status": 200, "method": "POST", "path": "/v1/order/type", "query": "", "ip": "::1", "user-agent": "Apifox/1.0.0 (https://apifox.com)", "latency": "171.647µs", "time": "2024-02-26T13:03:18Z"}
+2024-02-26T21:03:50.829+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:03:50.873+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T21:04:22.186+0800	INFO	zap@v0.2.0/zap.go:91	/v1/order/type	{"status": 200, "method": "POST", "path": "/v1/order/type", "query": "", "ip": "::1", "user-agent": "Apifox/1.0.0 (https://apifox.com)", "latency": "3.644089508s", "time": "2024-02-26T13:04:22Z"}
+2024-02-26T21:08:16.776+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:08:16.889+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T21:11:12.779+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:11:12.832+0800	PANIC	db/db.go:32	crate table error
+github.com/simon/orderManager/internal/db.Migration
+	/Users/zhanghaoran/project/orderManager/internal/db/db.go:32
+github.com/simon/orderManager/internal/db.InitDB
+	/Users/zhanghaoran/project/orderManager/internal/db/db.go:26
+github.com/simon/orderManager/internal/bootstrap.Init
+	/Users/zhanghaoran/project/orderManager/internal/bootstrap/init.go:12
+github.com/simon/orderManager/server.InitServer
+	/Users/zhanghaoran/project/orderManager/server/router.go:17
+main.main
+	/Users/zhanghaoran/project/orderManager/main.go:6
+runtime.main
+	/usr/local/Cellar/go/1.21.6/libexec/src/runtime/proc.go:267
+2024-02-26T21:11:48.617+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:11:48.656+0800	PANIC	db/db.go:32	crate table error
+github.com/simon/orderManager/internal/db.Migration
+	/Users/zhanghaoran/project/orderManager/internal/db/db.go:32
+github.com/simon/orderManager/internal/db.InitDB
+	/Users/zhanghaoran/project/orderManager/internal/db/db.go:26
+github.com/simon/orderManager/internal/bootstrap.Init
+	/Users/zhanghaoran/project/orderManager/internal/bootstrap/init.go:12
+github.com/simon/orderManager/server.InitServer
+	/Users/zhanghaoran/project/orderManager/server/router.go:17
+main.main
+	/Users/zhanghaoran/project/orderManager/main.go:6
+runtime.main
+	/usr/local/Cellar/go/1.21.6/libexec/src/runtime/proc.go:267
+2024-02-26T21:12:33.085+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:12:33.120+0800	PANIC	db/db.go:32	crate table error
+github.com/simon/orderManager/internal/db.Migration
+	/Users/zhanghaoran/project/orderManager/internal/db/db.go:32
+github.com/simon/orderManager/internal/db.InitDB
+	/Users/zhanghaoran/project/orderManager/internal/db/db.go:26
+github.com/simon/orderManager/internal/bootstrap.Init
+	/Users/zhanghaoran/project/orderManager/internal/bootstrap/init.go:12
+github.com/simon/orderManager/server.InitServer
+	/Users/zhanghaoran/project/orderManager/server/router.go:17
+main.main
+	/Users/zhanghaoran/project/orderManager/main.go:6
+runtime.main
+	/usr/local/Cellar/go/1.21.6/libexec/src/runtime/proc.go:267
+2024-02-26T21:12:47.936+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:16:31.261+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:16:31.467+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T21:20:11.063+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:20:11.223+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T21:25:12.390+0800	INFO	db/db.go:25	create db success
+2024-02-26T21:25:12.458+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T21:25:23.105+0800	INFO	zap@v0.2.0/zap.go:91	/v1/order/kind	{"status": 200, "method": "POST", "path": "/v1/order/kind", "query": "", "ip": "::1", "user-agent": "Apifox/1.0.0 (https://apifox.com)", "latency": "18.147992ms", "time": "2024-02-26T13:25:23Z"}
+2024-02-26T22:09:15.276+0800	INFO	db/db.go:25	create db success
+2024-02-26T22:09:15.390+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T22:11:11.631+0800	INFO	db/db.go:25	create db success
+2024-02-26T22:11:11.697+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T22:11:22.309+0800	ERROR	op/order.go:32	create order type error. %s咖啡 2
+github.com/simon/orderManager/internal/op.UpdateOrderType
+	/Users/zhanghaoran/project/orderManager/internal/op/order.go:32
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/simon/orderManager/server/middleware.JwtMiddleware.func1
+	/Users/zhanghaoran/project/orderManager/server/middleware/jwt.go:49
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/zap.CustomRecoveryWithZap.func1
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-contrib/zap@v0.2.0/zap.go:159
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/zap.GinzapWithConfig.func1
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-contrib/zap@v0.2.0/zap.go:59
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/zhanghaoran/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.21.6/libexec/src/net/http/server.go:2938
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.21.6/libexec/src/net/http/server.go:2009
+2024-02-26T22:11:22.310+0800	INFO	zap@v0.2.0/zap.go:91	/v1/order/type	{"status": 200, "method": "PUT", "path": "/v1/order/type", "query": "", "ip": "::1", "user-agent": "Apifox/1.0.0 (https://apifox.com)", "latency": "37.217152ms", "time": "2024-02-26T14:11:22Z"}
+2024-02-26T22:12:24.306+0800	INFO	db/db.go:25	create db success
+2024-02-26T22:12:24.363+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T22:14:10.477+0800	INFO	db/db.go:25	create db success
+2024-02-26T22:14:10.533+0800	INFO	db/db.go:35	create table successful.
+2024-02-26T22:22:32.506+0800	INFO	db/db.go:25	create db success
+2024-02-26T22:22:32.550+0800	INFO	db/db.go:35	create table successful.

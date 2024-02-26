@@ -27,7 +27,7 @@ func InitDB() {
 }
 
 func Migration() {
-	err := DB.AutoMigrate(&model.User{})
+	err := DB.AutoMigrate(&model.User{}, &model.OrderType{}, &model.OrderKind{})
 	if err != nil {
 		logger.Log.Sugar().Panic("crate table error")
 		panic("crate table error")

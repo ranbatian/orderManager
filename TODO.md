@@ -1,9 +1,9 @@
 # TODO
 
 1. jwt
-   1.1 登陆
-   1.2 创建用户
-   1.3 middleware jwt 凭证
+   1.1 [ok] 登陆
+   1.2 [ok] 创建用户
+   1.3 [ok] middleware jwt 凭证
 
 2. 账单
    2.1 创建账单类目
