@@ -46,6 +46,7 @@ func JwtMiddleware() func(c *gin.Context) {
 			return
 		}
 		c.Set("username", mc.Username)
+		c.Set("userId", mc.UserId)
 		c.Next()
 
 	}

@@ -9,19 +9,22 @@ import (
 
 type MyClaims struct {
 	Username string `json:"username"`
+	UserId   uint   `json:"userId"`
 	jwt.StandardClaims
 }
 
 // 设置过期时间
-const TokenExpireDuration = time.Hour * 24
+const TokenExpireDuration = time.Hour * 24 * 7
 
 // 密码自行设定
 var Secret = []byte("secret")
 
-func CrateToken(username string) (string, error) {
+func CrateToken(username string, userId uint, days int) (string, error) {
 	// 创建一个我们自己的声明
+	TokenExpireDuration := time.Hour * 24 * time.Duration(days)
 	c := MyClaims{
 		username, // 自定义字段
+		userId,
 		jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(TokenExpireDuration).Unix(), // 过期时间
 			Issuer:    "admin",                                    // 签发人

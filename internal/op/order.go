@@ -51,5 +51,22 @@ func CreateOrderKind(c *gin.Context) {
 		return
 	}
 	common.ErrorWithMsg(c, "参数传递错误", 500)
+	return
+}
 
+func CreateOrder(c *gin.Context) {
+	var order model.Order
+	userId := c.GetUint("userId")
+	if err := c.ShouldBind(&order); err == nil {
+		err := service.CreateOrder(userId, order)
+		if err != nil {
+			logger.Log.Sugar().Error("create order kind error. %d", order.ID)
+			common.ErrorWithMsg(c, "创建账单失败", 500)
+			return
+		}
+		common.SuccessRespond(c)
+		return
+	}
+	common.ErrorWithMsg(c, "参数传递错误", 500)
+	return
 }

@@ -25,7 +25,7 @@ func Login(c *gin.Context) {
 			common.ErrorWithMsg(c, "账户密码错误", 401)
 			return
 		}
-		token, err := util.CrateToken(login.Name)
+		token, err := util.CrateToken(login.Name, login.ID, 1)
 		common.SuccessRespond(c, token)
 		return
 	}

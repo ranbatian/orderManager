@@ -2,6 +2,7 @@ package service
 
 import (
 	"github.com/simon/orderManager/internal/db"
+	"github.com/simon/orderManager/internal/model"
 	"github.com/simon/orderManager/server/common"
 )
 
@@ -10,7 +11,6 @@ func UpdateOrderType(params common.OrderType) error {
 	if err != nil {
 		return err
 	}
-	ot.OrderKindId = params.OrderKindId
 	if params.Description != "" {
 		ot.Description = params.Description
 	}
@@ -20,4 +20,9 @@ func UpdateOrderType(params common.OrderType) error {
 	err = db.UpdateOrderType(ot)
 	return err
 
+}
+
+func CreateOrder(userId uint, order model.Order) error {
+	order.User = userId
+	return db.CreateOrder(order)
 }

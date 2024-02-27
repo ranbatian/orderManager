@@ -7,7 +7,7 @@ func CreateOrderType(odType model.OrderType) error {
 }
 
 func GetOrderTypeById(id uint) (orderTy model.OrderType, err error) {
-	err = DB.Model(&model.OrderType{}).Where("id = ?", id).Association("OrderKind").Find(&orderTy)
+	err = DB.Model(&model.OrderType{}).Where("id = ?", id).Find(&orderTy).Error
 	return
 }
 
@@ -17,4 +17,8 @@ func UpdateOrderType(odType model.OrderType) error {
 
 func CreateOrderKind(odType model.OrderKind) error {
 	return DB.Create(&odType).Error
+}
+
+func CreateOrder(order model.Order) error {
+	return DB.Create(&order).Error
 }
