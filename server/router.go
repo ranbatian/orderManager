@@ -45,5 +45,5 @@ func order(g *gin.RouterGroup) {
 	g.POST("/type", op.CreateOrderType)
 	g.PUT("/type", op.UpdateOrderType)
 	g.POST("/kind", op.CreateOrderKind)
-	g.POST("/kind/:id", op.CreateOrderKind)
+	g.POST("/kind/:id")
 }
